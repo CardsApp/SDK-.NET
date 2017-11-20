@@ -1,1 +1,0 @@
-C:\Users\Ido\Documents\Visual Studio 2017\Projects\CardsSDK\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache

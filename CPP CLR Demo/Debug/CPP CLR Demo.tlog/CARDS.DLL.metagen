@@ -1,0 +1,99 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Cards, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct Cards.ReaderStatus: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Cards.ReaderStatus Disconnected = 1 : Public, Static, Literal, HasDefault
+    Cards.ReaderStatus Connected = 2 : Public, Static, Literal, HasDefault
+    Cards.ReaderStatus AlreadyInUse = 3 : Public, Static, Literal, HasDefault
+Class Cards.CardTapHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(CardTapResponse): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(CardTapResponse, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Cards.StatusChangeHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(ReaderStatus): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(ReaderStatus, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Cards.CardReader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Cards.ReaderSettings, Cards.ReaderCredentials): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Cards.ReaderCredentials): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Cards.ReaderSettings ReaderSettings : Public
+    Cards.ReaderCredentials ReaderCredentials : Public
+  Events:
+    Cards.CardTapHandler OnCardTap: 
+    Cards.StatusChangeHandler OnStatusChange: 
+  Methods:
+    add_OnCardTap(CardTapHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnCardTap(CardTapHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnStatusChange(StatusChangeHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnStatusChange(StatusChangeHandler): PrivateScope, Public, HideBySig, SpecialName
+    Listen(): PrivateScope, Public, HideBySig
+    GetDevicesNames(): PrivateScope, Public, Static, HideBySig
+Class Cards.CardDetails: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String UserID : Public
+Struct Cards.CardTapError: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Cards.CardTapError InternetError = 1 : Public, Static, Literal, HasDefault
+    Cards.CardTapError ApiKeyInvalid = 2 : Public, Static, Literal, HasDefault
+    Cards.CardTapError TransactionTokenInvalid = 3 : Public, Static, Literal, HasDefault
+    Cards.CardTapError UserNotAssociatedWithCardReader = 4 : Public, Static, Literal, HasDefault
+    Cards.CardTapError NoSuchTPID = 5 : Public, Static, Literal, HasDefault
+    Cards.CardTapError TransactionTokenMissing = 6 : Public, Static, Literal, HasDefault
+    Cards.CardTapError TransactionTokenDoesntExist = 7 : Public, Static, Literal, HasDefault
+    Cards.CardTapError TransactionTokenAlreadyUsed = 8 : Public, Static, Literal, HasDefault
+    Cards.CardTapError TransactionTokenAlreadyValidated = 9 : Public, Static, Literal, HasDefault
+Class Cards.CardTapResponse: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean IsSuccess : Public
+    Cards.CardTapError Error : Public
+    Cards.CardDetails CardDetails : Public
+Struct Cards.DevicesList: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr Cstrs : Public
+    Int32 Count : Public
+Struct Cards.TransferResponse: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 ErrorCode : Public
+    Int32 TransferredLength : Public
+Struct Cards.CardTapResponseStruct: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean IsSuccess : Public
+    Int32 ErrorCode : Public
+    Byte[] Uid : Public, HasFieldMarshal
+Class Cards.InternalCardTapHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(CardTapResponseStruct): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(CardTapResponseStruct, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Cards.ReaderCredentials: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String ApiKey : Public
+Class Cards.ReaderSettings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String DeviceName : Public

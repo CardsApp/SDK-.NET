@@ -1,0 +1,12 @@
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\obj\Release\VB.NET_Demo.Resources.resources
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\obj\Release\VB.NET Demo.vbproj.GenerateResource.Cache
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\obj\Release\VB.NET Demo.vbproj.CoreCompileInputs.cache
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\obj\Release\VB.NET Demo.vbprojResolveAssemblyReference.cache
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\bin\Release\VB.NET Demo.exe.config
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\bin\Release\VB.NET Demo.exe
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\bin\Release\VB.NET Demo.pdb
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\bin\Release\VB.NET Demo.xml
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\bin\Release\Cards.dll
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\obj\Release\VB.NET Demo.exe
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\obj\Release\VB.NET Demo.xml
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\VB.NET Demo\obj\Release\VB.NET Demo.pdb

@@ -1,0 +1,7 @@
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\CSharp Demo\obj\x86\Debug\CSharp Demo.csprojResolveAssemblyReference.cache
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\CSharp Demo\obj\x86\Debug\CSharp Demo.csproj.CoreCompileInputs.cache
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\CSharp Demo\bin\x86\Debug\CSharp Demo.exe.config
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\CSharp Demo\bin\x86\Debug\CSharp Demo.exe
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\CSharp Demo\bin\x86\Debug\CSharp Demo.pdb
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\CSharp Demo\obj\x86\Debug\CSharp Demo.exe
+C:\Users\Ido\Documents\Visual Studio 2017\Projects\temp\CardsSDK\CSharp Demo\obj\x86\Debug\CSharp Demo.pdb

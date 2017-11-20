@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VB.NET Demo
+</name>
+</assembly>
+<members>
+<member name="T:VB.NET_Demo.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:VB.NET_Demo.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:VB.NET_Demo.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:VB.NET_Demo.CardsModule.HandleCardTap(Cards.CardTapResponse)">
+ <summary>
+ Handle Card Tap event. This event is raised when a user taps his phone on the reader. 
+ Note that Cards must be installed on the phone.
+ </summary>
+</member>
+<member name="M:VB.NET_Demo.CardsModule.HandleStatusChange(Cards.ReaderStatus)">
+ <summary>
+ Handles reader status change. 
+ </summary>
+</member>
+</members>
+</doc>
